@@ -3,9 +3,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ upadhyay-test ]
   pull_request:
-    branches: [ master ]
+    branches: [ upadhyay-test ]
 
 jobs:
 
@@ -77,7 +77,7 @@ jobs:
             cd hacene/demo/actions/ && java -jar workflow-github-actions.jar &
           host: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
-          pass: ${{ secrets.SSH_PASSWORD }}
+          key: ${{ secrets.SSH_PASSWORD }}
           args: "-tt"
           # The & in the command runs the process on background
 
