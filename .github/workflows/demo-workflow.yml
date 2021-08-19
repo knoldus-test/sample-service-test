@@ -2,8 +2,7 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ upadhyay-test ]
+
   pull_request:
     branches: [ upadhyay-test ]
 
